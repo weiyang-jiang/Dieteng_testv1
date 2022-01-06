@@ -67,7 +67,7 @@
 
   ![avatar](https://github.com/weiyang-jiang/Dieteng_testv1/raw/main/models/Predict_PCA.png)
   
-  ![avatar](https://github.com/weiyang-jiang/Dieteng_testv1/raw/main/models/Predict_PCA.png)
+  ![avatar](https://github.com/weiyang-jiang/Dieteng_testv1/raw/main/models/PCAtable.png)
             
 
 #### 8.2 BN层
