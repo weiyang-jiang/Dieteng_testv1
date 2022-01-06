@@ -52,6 +52,7 @@ $$x= {x \- mean \over std}$$
 ### 7. 训练结果
 
 - loss 曲线 最低值为0.006298770211137754
+
   ![avatar](https://github.com/weiyang-jiang/Dieteng_testv1/raw/main/models/loss_base.png)
 - Predict 曲线
 
@@ -66,7 +67,9 @@ $$x= {x \- mean \over std}$$
 造成模型不准确。采用PCA主成分分析法，通过求解协方差矩阵的特征值和特征向量，选取最大特征值对应的特征向量(6, 6)
 我选取了特征向量中前5个维度，删减后相当于一个(5, 6)维度的特征向量乘以(8243, 6)得到新的数据为shape为(8243, 5)
 - loss 曲线 最低值为0.006155287731707711
+
   ![avatar](https://github.com/weiyang-jiang/Dieteng_testv1/raw/main/models/loss_PCA.png)
+  
 - Predict 曲线 
 
   ![avatar](https://github.com/weiyang-jiang/Dieteng_testv1/raw/main/models/Predict_PCA.png)
@@ -83,7 +86,9 @@ $$x= {x \- mean \over std}$$
 - 基于PCA降维4维，模型在神经网络上增加两层BN，用于对激活后的参数进行标准化（降低因为激活函数导致的数据极化）， 
 这对于结果来说又有提升,预测数据也更为集中
 - loss 曲线 最低值为0.006155287731707711
+
   ![avatar](https://github.com/weiyang-jiang/Dieteng_testv1/raw/main/models/loss_BN.png)
+  
 - Predict 曲线 
 
   ![avatar](https://github.com/weiyang-jiang/Dieteng_testv1/raw/main/models/Predict_BN.png)
